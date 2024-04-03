@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0px solid red;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.app-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60% 40%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+    padding-left: 8px;
+}
+
+.text-container > h1 {
+    line-height: 4rem;
+    font-size: 3.2rem;
+}
+.text-container > p {
+    color: gray;
+    font-size: 2rem;
+}
+
+.image-container {
+    padding: 8px;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5 {
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.image-left {
+    padding-bottom: 30%;
+}
+
+.image1 {
+    background-image: url('./images/1.png');
+    height: 100%;
+}
+
+.image-right {
+    padding-top: 30%
+}
+
+.image2 {
+    height: 100%;
+    background-image: url('./images/2.png');
+}
+
+.image3,
+.image4,
+.image5 {
+    height: 100%;
+}
+
+.image3 {
+    background-image: url('./images/3.png');
+}
+
+.image4 {
+    background-image: url('./images/4.png');
+}
+
+.image5 {
+    background-image: url('./images/5.png');
+}
+
+.button {
+    width: 100px;
+    height: 32px;
+    color: white;
+    font-size: 1.6rem;
+    background-color: black;
+    border-radius: 8px;
+}
