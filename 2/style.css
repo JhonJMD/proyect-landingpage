@@ -101,3 +101,15 @@ html {
     background-color: black;
     border-radius: 8px;
 }
+
+@media (max-width: 430px) {
+    .app-container {
+        display: flex;
+        flex-direction: column;
+        height: 250vh;
+    }
+    .image-container {
+        padding: 0;
+    }
+}
+
