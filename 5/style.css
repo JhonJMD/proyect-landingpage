@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+
+
+.image1 {
+    background-image: url('./images/1.png');
+    width: clamp(150px, 200px, 250px);
+    height: clamp(150px, 200px, 250px);
+}
