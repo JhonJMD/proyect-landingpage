@@ -1,0 +1,80 @@
+:root {
+    --orange: #9c2004;
+    --beige: #e5b94b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.app-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--orange);
+    position: relative;
+}
+
+.text-container {
+    position: absolute;
+    z-index: 10;
+    padding: 40px 40px;
+    color: white;
+    height: 100%;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-size: 1.2rem;
+    height: 40px;
+    width: 120px;
+    border: 0;
+    border-radius: 12rem;
+    background-color: var(--beige);
+}
+
+.image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    right: 0;
+}
+
+.imagen {
+    position: absolute;
+    z-index: 3;
+    background-image: url('./images/person.png');
+    width: 100vw;
+    height: 480px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: inherit;
+}
+
+.pattern1, .pattern2 {
+    background: no-repeat url('./images/pattern.png');
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    position: absolute;
+}
+
+.pattern2 {
+    right: 0;
+    bottom: 40px;
+}
