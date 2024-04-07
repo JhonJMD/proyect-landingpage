@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.app-container {
+    width: 100vw;
+    padding: 20px 20px;
+}
+
+.text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 4rem;
+    width: 20%;
+}
