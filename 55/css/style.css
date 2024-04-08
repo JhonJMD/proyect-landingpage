@@ -3,9 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 body{
@@ -18,21 +16,181 @@ body{
 }
 
 main{
-    display: grid;
+    
     width: 100vw;
     height: 100vh;
     font-size: 16px;
 }
+.column{
+    width: 100vw;
+    height: 50vh;
+    box-sizing: border-box;
+}
+
+.header{
+    margin: 50px auto;
+    width: 70vw;
+    height: 25vh;
+}
+
+.header strong{
+    font-size: 1.5em;
+}
+
+.header p{
+    font-size: 0.9em;
+}
+
+.bottom{
+    text-align: center;
+    width: 120px;   
+    color: white;
+    background-color: black;
+    padding: 15px 5px;
+    border-radius: 80px 80px 80px 80px;
+}
+
+.bottom span{
+    background-color: black;
+}
 
 .second{   
     display: flex;
-    align-items: center;
-    font-size: 0.8rem;
-    margin: 10px;
+    justify-content: center;
+    align-items: flex-end;
     color: white;
 }
 
-.coffee img{
-    width: 150px;
+.imagen-one{
+    width: 125px;
+    height: 100px;
+    background-image: url(/55/img/coffee-one.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
 }
 
+.imagen-second{
+    width: 125px;
+    height: 100px;
+    background-image: url(/55/img/coffee-second.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.footer{
+    display: flex;
+    gap: 15px;
+    margin: 80px 0 30px;
+}
+
+.coffee {
+    display: flex;
+}
+
+.coffee p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.7em;
+}
+
+.number p{
+    margin-top: 0;
+    margin-right: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.information{
+    font-family: "Poppins", sans-serif;
+    width: 125px;
+}
+
+@media(min-width: 390px){
+    .header strong{
+        font-size: 2.3em;
+    }
+
+
+    .coffee p{
+        font-size: 0.7em;
+    }
+
+    .coffee{
+        font-size: 1em;
+    }
+}
+
+@media(min-width: 360px){
+    .footer{
+        margin: 0 0 80px;
+    }
+}
+
+@media(min-width: 710px){
+    body{
+        margin: 0 auto;
+    }
+    .header strong{
+        font-size: 2em;
+    }
+    .footer{
+        margin: 150px auto 0;
+        gap: 150px;
+    }
+    .imagen-one{
+        width: 250px;
+        height: 200px;
+    }
+    .imagen-second{
+        width: 250px;
+        height: 200px;
+    }
+    .information{
+        width: 250px;
+    }
+}
+
+@media(min-width: 810px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/55/img/background-pc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .first{
+        margin: 50px auto;
+    }
+    .column{
+        width: 50vw;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+    .second{
+        display: flex;
+        align-items: flex-start;
+        margin: 50px auto;
+    }
+    .header{
+        margin: 0 auto;
+        width: 25vw;
+        height: 70vh;
+    }
+    .footer{
+        display: grid;
+        margin: 0 auto;
+        width: 25vw;
+        height: 70vh;
+    }
+    main{
+        display: flex;
+    }
+    .header strong{
+        font-size: 3em;
+    }
+}
