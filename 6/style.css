@@ -1,0 +1,245 @@
+:root {
+    --purple: #685FD4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    padding: 40px 32px 0px;
+}
+
+.logo-container {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    height: calc(20vh - 40px);
+    margin-bottom: 40px;
+}
+
+.logo {
+    height: 100%;
+}
+
+.title-container {
+    order: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: calc(80vh - 40px);
+}
+
+.title {
+    height: 50%;
+    padding-top: 10%;
+    font-size: 2.8rem;
+}
+
+.text {
+    padding-top: 20%;
+    height: 50%;
+    font-size: 1.6rem;
+    color: grey;
+    justify-self: center;
+}
+
+.desing-container {
+    order: 3;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.big-border {
+    z-index: 1;
+    border: 2px solid gray;
+    width: 100%;
+    height: 76%;
+    position: absolute;
+    top: 0;
+    left: -16px;
+    border-radius: 32px;
+}
+
+.small-border {
+    border: 2px solid gray;
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    bottom: 20px;
+    right: -16px;
+    border-radius: 32px;
+}
+
+.product-img {
+    z-index: 2;
+    background: no-repeat url('./images/product.png');
+    background-size: contain;
+    height: 76%;
+    width: 100%;
+}
+
+.upper-text,
+.bottom-text {
+    z-index: 3;
+    position: absolute;
+    background-color: var(--purple);
+    font-size: 1.2rem;
+    text-align: center;
+    height: 44px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper-text {
+    width: 220px;
+    top: 20%;
+    right: -20px;
+    border-radius: 32px;
+}
+
+.bottom-text {
+    width: 180px;
+    bottom: 20%;
+    left: -20px;
+    border-radius: 32px;
+}
+
+.features-container {
+    order: 4;
+    border: 1px solid gray;
+    border-radius: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+
+.feature {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.feature-text {
+    font-size: 1.2rem;
+}
+
+.button-container {
+    order: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20vh;
+}
+
+.button {
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 140px;
+    height: 40px;
+}
+
+.button:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+@media (min-width: 480px) {
+    .app-container {
+        height: 100vh;
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 16vh 32vh 24vh 20vh;
+        grid-template-areas:
+            "logo design"
+            "title design"
+            "buttons design"
+            "features design";
+    }
+    .logo-container {
+        grid-area: logo;
+        margin-bottom: 0;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .title-container {
+        grid-area: title;
+        height: 100%;
+        text-align: start;
+    }
+    .title {
+        padding: 40px 0 0 0;
+        font-size: 3.6rem;
+    }
+    .text {
+        padding: 60px 0 0 0;
+        font-size: 1.6rem;
+    }
+    .button-container {
+        height: 100%;
+        grid-area: buttons;
+    }
+    .button {
+        height: 68px;
+        width: 240px;
+    }
+    .features-container {
+        justify-self: center;
+        align-items: center;
+        height: 80%;
+        grid-area: features;
+        justify-content: space-around;
+    }
+    .feature {
+        width: 16%;
+        padding-left: 0;
+        gap: 8px;
+    }
+    .desing-container {
+        height: 100%;
+        grid-area: design;
+        justify-content: center;
+        display: flex;
+    }
+    .upper-text {
+        right: 100px;
+    }
+    .bottom-text {
+        left: 100px;
+    }
+    .big-border {
+        width: 52%;
+        height: 60%;
+        left: 80px;
+        top: 40px;
+    }
+    .small-border {
+        width: 40%;
+        height: 60%;
+        right: 80px;
+        bottom: 80px;
+    }
+    .product-img {
+        width: 60%;
+    }
+}

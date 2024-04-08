@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.app-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.text-container {
+    height: 50%;
+}
+
+.upper-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px
+}
+
+.upper-title {
+    font-size: 2rem;
+}
+.upper-text {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.upper-button {
+    border: 0;
+    background-color: black;
+    color: white;
+    height: 24px;
+    width: 80px;
+    border-radius: 8px;
+}
+
+.bottom-text {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    gap: 16px;
+    font-size: .8rem;
+}
+
+.image {
+    background: no-repeat url('./images/bg.png');
+    background-size: 50vh 100vw;
+    height: 50%;
+}
+
+@media (min-width: 480px) {
+    .app-container {
+        flex-direction: row-reverse;
+        padding: 40px 0 0 0;
+    }
+    .text-container {
+        width: 50%;
+        height: 100%;
+    }
+    .upper-text-container {
+        height: 50%;
+        justify-content: space-between;
+        padding-bottom: 20%;
+    }
+    .upper-title {
+        font-size: 4rem;
+        font-weight: 100;
+    }
+    .upper-text {
+        font-size: 1.6rem;
+    }
+    .upper-button {
+        height: 32px;
+    }
+    .bottom-text {
+        height: 30%;
+        justify-content: space-around;
+        font-size: 1.2rem;
+    }
+    .image {
+        width: 50%;
+        height: 100%;
+        background-size: 90% 100%;
+    }
+}

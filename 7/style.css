@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 20px 20px;
+}
+
+.title-container {
+    height: 40%;
+}
+
+.title {
+    font-size: 3.2rem;
+}
+
+.card-container {
+    align-self: center;
+    height: 60%;
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    gap: 20px;
+}
+
+.card {
+    flex-shrink: 0;
+    width: 220px;
+    height: 88%;
+}
+
+.card-title {
+    height: 8%;
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.card-info {
+    height: 12%;
+    font-size: .8rem;
+    color: grey;
+}
+
+
+.image-container {
+    z-index: 2;
+    width: 100%;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 16px;
+}
+
+.image-text-container {
+    width: inherit;
+    z-index: 3;
+    padding: 8px;
+    background: linear-gradient(0deg, rgba(28,28,28,0.8) 0%, rgba(255,255,255,0) 80%);
+    border-radius: 16px;
+}
+
+.image-title {
+    font-size: 1.2rem;
+    font-weight: 100;
+    width: 100%;
+}
+
+.image-info {
+    font-size: .8rem;
+    width: 100%;
+}
+
+.image1 {
+    background-image: url('./images/1.png');
+    z-index: 1;
+}
+
+.image2 {
+    background-image: url('./images/2.png');
+    z-index: 1;
+}
+.image3 {
+    background-image: url('./images/3.png');
+    z-index: 1;
+}
+.image4 {
+    background-image: url('./images/4.png');
+    z-index: 1;
+}
