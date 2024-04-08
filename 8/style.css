@@ -12,7 +12,6 @@
 body {
     font-size: 62.5%;
 }
-
 .app-container {
     width: 100vw;
     height: 100vh;
@@ -78,3 +77,13 @@ body {
     right: 0;
     bottom: 40px;
 }
+
+@media (min-width: 480px) {
+    .app-container {
+        display: flex;
+        flex-direction: row-reverse;
+        position: static;
+    }
+    
+}
+
