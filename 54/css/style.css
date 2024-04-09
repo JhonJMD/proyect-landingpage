@@ -30,11 +30,13 @@ body {
 }
 
 .left-column {
+    position: relative;
     display: grid;
     width: 50%;
-    height: 100%;
+    height: 80%;
     border: 1px solid black;
     border-radius: 10%;
+    padding: 10px;
     grid-template: 
     "logo logo"
     "head head"
@@ -43,7 +45,9 @@ body {
     ;
     .logo{
         grid-area: logo;
-        margin: 0 auto;
+        position: absolute;
+        top: -70px;
+        left: 37.5%;
     }
     .head{
         grid-area: head;
@@ -51,15 +55,19 @@ body {
     }
     .row1{
         grid-area: row1;
+        margin: 0 auto;
     }
     .row2{
         grid-area: row2;
+        margin: 0 auto;
     }
     .row3{
         grid-area: row3;
+        margin: 0 auto;
     }
     .row4{
         grid-area: row4;
+        margin: 0 auto;
     }
 }
 
@@ -71,14 +79,6 @@ body {
     justify-content: center;
     align-items: left;
     text-align: left;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    border: 2px solid #00bfff;
-    border-radius: 50%;
-    margin-bottom: 20px;
 }
 
 .destination-info {
@@ -105,4 +105,22 @@ body {
 
 .cta-button {
     margin-top: 20px;
+}
+
+@media(min-width: 980px){
+    .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .left-column{
+        width: 100%;
+        height: 50vh;
+    }
+    .right-column{
+        width: 100%;
+        height: 50vh;
+    }
+    .logo{
+        left: 50%;
+    }
 }
