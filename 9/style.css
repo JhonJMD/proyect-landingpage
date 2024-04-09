@@ -1,0 +1,47 @@
+:root {
+    --grey: #363830;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    color: var(--grey);
+}
+
+.app-container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(270deg, var(--grey), white);
+    padding: 40px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.text {
+    font-size: 1.6rem;
+    width: 80%;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    color: whitesmoke;
+    border: 0px;
+    border-radius: 32px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    background-color: var(--grey);
+}
