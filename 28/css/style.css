@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Poppins",  sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template:
+    "seccion1 "
+    "seccion2"
+    "seccion3";
+  gap: 10px;
+  padding: 10px;
+}
+.seccion1 {
+  grid-area: seccion1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.seccion2 {
+  grid-area: seccion2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.item {
+  display: flex;
+  gap: 10px;
+}
+.imgs1 {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.imgs2 {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.ims {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parrafo {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  bottom: 1%;
+  width: 80%;
+  text-align: center;
+}
+.parrafo2 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  bottom: 1%;
+  width: 80%;
+  text-align: center;
+}
+.seccion3 {
+  grid-area: seccion3;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  background-color: #333333;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  width: 50%;
+  border-radius: 25px;
+}
+@media (min-width: 750px) {
+  .grid {
+    grid-template:
+      "seccion1 seccion2"
+      "seccion3 seccion3";
+    margin: 10px;
+    gap: 10%;
+    padding: 4%;
+  }
+  .seccion1 {
+    align-items: center;
+  }
+  .seccion2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .item img {
+    width: 70%;
+  }
+
+  .seccion3 {
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px;
+  }
+  .seccion3 img {
+    width: 100%;
+  }
+  .imgs1 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+  }
+  .imgs2 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+}

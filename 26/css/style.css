@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080C15;
+    padding: 5%;
+    font-family: "Poppins", sans-serif;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.up{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color:white;
+    gap:25px;
+}
+.color_red{
+    color:red;
+}
+.title{
+    color: white;
+    text-align: center;
+    font-size:2.5em;
+    font-weight: bold;
+}
+.burguer_line{
+    display: flex;
+    width: 135%;
+}
+.burguer_1{
+    transform:translateX(0);
+}
+.burguer_2{
+    transform: translateX(-30%);
+}
+.burguer_3{
+    transform: translateX(-60%);
+}
+.burguer_4{
+    transform: translateX(-90%);
+}
+.burguer_5{
+    transform: translateX(-120%);
+}
+.burguer_6{
+    transform: translateX(-150%);
+}
+.burguer_7{
+    transform: translateX(-180%);
+}
+.txt_main{
+    font-size: 1.2em;
+    text-align: justify;
+}
+.buttom{
+    background-color: red;
+    width: max-content;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: bold;
+    align-self: center;
+}
+.bot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    }
+.box{
+    color: white;
+    padding: 8%;
+    width: 70vw;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    background: linear-gradient(to right, #ffffff55, rgba(45, 44, 44, 0.251), #00000000);
+    backdrop-filter: blur(5px);
+}
+@media (min-width:600px) {
+    body{
+        height: 100vh;
+    }
+    .container{
+        height: 100%;
+        padding-top: 0px;
+    }
+    .up{
+        width: 40vw;
+    }
+    .title{
+        font-size: clamp(2em, 3.2vw, 4rem );
+    }
+    .txt_main{
+        text-align: left;
+        font-size: clamp(1em, 1.5vw, 1.5em);
+    }
+    .buttom{
+        align-self: flex-start;
+    }
+    .bot{
+        flex-direction: row;
+        width: 100%;
+    }
+    .box{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 5%;
+        text-align: center;
+        height: 10px;
+        font-size: clamp(0.5rem, 2vw,1.5rem);
+    }
+
+    .background{
+        height: 100vh;
+        width: 60vw;
+        position: fixed;
+        z-index: -1;
+        top:0vh;
+        right: 0px;
+    }
+    .big_img{
+        height: 100vh;
+    }
+    
+}
